@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em auto;
+  width: 80%;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/** Estilos de la tabla */
+
+.table {
+  width: 60%;
+}
+
+.row {
+  text-align: justify;
+  padding: 0.5em;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.row-title {
+  background-color: #00aeef;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.row-title > a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.row-title > a:hover {
+  text-decoration: underline;
+}
+
+.row-admin {
+  background-color: #00ef9f;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages {
+  margin: 1em;
+}
+
+.pages > a {
+  padding: 0.2em 0.5em;
+  border: 1px solid #00aeef;
+  color: #00aeef;
+  margin: 0 0.2em;
+  transition: background-color 0.3s;
+}
+
+.pages > a:hover,
+.pages > a.current {
+  background-color: #00aeef;
+  color: white;
+}
